@@ -14,13 +14,13 @@ import operator
 import os
 import sys
 import tensorflow as tf
-import time 
+import time
 
 ###############-First part, used to get images for the training-################
 
 def facialLandMarksRecognition(sec, dirName, name):
 
-    '''In this function the algorithm recognize your 
+    '''In this function the algorithm recognize your
     face and save every frames of the video keeping only the face'''
 
     detector = dlib.get_frontal_face_detector()
@@ -65,8 +65,8 @@ def facialRecognition():
     '''This is the main function for the facial recognition
     and images cropping'''
 
-    name = input("Insert your name: ")
-    dirName = input("Insert the dir where you want to save your images(Default /tmp/images/yourName): ")
+    name = input("Insert your name: ").strip()
+    dirName = input("Insert the dir where you want to save your images(Default /tmp/images/yourName): ").strip()
     if (dirName == ""):
         os.system("mkdir /tmp/images")
         dirName = "/tmp/images"
@@ -82,29 +82,29 @@ def training():
 
     '''This is the main function for the training'''
 
-    image_dir = input("Insert the directory path of images you want to use for the training: ")
+    image_dir = input("Insert the directory path of images you want to use for the training: ").strip()
     image_dir = " --image_dir "+image_dir
 
-    graph_dir = input("Insert the path where you want to save the output graph (+ name of the graph .pb)(Default = /tmp/outputGraph/output_graph.pb): ")
+    graph_dir = input("Insert the path where you want to save the output graph (+ name of the graph .pb)(Default = /tmp/outputGraph/output_graph.pb): ").strip()
     if (graph_dir == ""):
         os.system("mkdir /tmp/outputGraph")
         graph_dir = "/tmp/outputGraph/output_graph.pb"
     graph_dir = " --output_graph "+graph_dir
 
-    labels_dir = input("Insert the path where you want to save the output labels (+ name of the labels .txt)(Default = /tmp/labels/output_labels.txt): ")
+    labels_dir = input("Insert the path where you want to save the output labels (+ name of the labels .txt)(Default = /tmp/labels/output_labels.txt): ").strip()
     if (labels_dir == ""):
         os.system("mkdir /tmp/labels")
         labels_dir = "/tmp/labels/output_labels.txt"
     labels_dir = " --output_labels "+labels_dir
 
-    bottleneck_dir = input("insert the path where you want to save bottlenecks(Default = /tmp/bottlenecks: ")
+    bottleneck_dir = input("insert the path where you want to save bottlenecks(Default = /tmp/bottlenecks: ").strip()
     if (bottleneck_dir == ""):
         os.system("mkdir /tmp/bottlenecks")
         graph_dir = "/tmp/bottlenecks"
     bottleneck_dir = " --bottleneck_dir "+bottleneck_dir
 
     os.system("python3 retrain.py"+image_dir+graph_dir+labels_dir+bottleneck_dir)
-    print("Training terminated!") 
+    print("Training terminated!")
 
 ###############-Third part, used to make inference-################
 
@@ -126,7 +126,7 @@ def load_graph(model_file):
 def read_tensor_from_image_file(file_name, input_height=299, input_width=299, input_mean=0, input_std=255):
 
     '''Convert the image in a tensor'''
-    
+
     input_name = "file_reader"
     output_name = "normalized"
     file_reader = tf.read_file(file_name, input_name)
@@ -197,7 +197,7 @@ def inference(file_path, model_path, labels_path):
 
     top_k = results.argsort()[-5:][::-1]
     labels = load_labels(label_file)
-    
+
     return labels, results
 
 def separate(word, wordArr):
@@ -223,12 +223,13 @@ def makeInference():
 
     '''Main function to make inference'''
 
-    img_dir = input("Insert the path of the image: ")
-    graph_path = input("Insert the graph's path(Default = /tmp/outputGraph/output_graph.pb): ")
+    img_dir = input("Insert the path of the image: ").strip()
+
+    graph_path = input("Insert the graph's path(Default = /tmp/outputGraph/output_graph.pb): ").strip()
     if (graph_path == ""):
         graph_dir = "/tmp/outputGraph/output_graph.pb"
 
-    labels_path = input("Insert the label's path(Default = labels/output_labels.txt): ")
+    labels_path = input("Insert the label's path(Default = labels/output_labels.txt): ").strip()
     if (graph_path == ""):
         graph_dir = "/tmp/labels/output_labels.txt"
 
@@ -251,7 +252,7 @@ def makeInference():
         labels, results = inference(title_path, graph_path, labels_path)
         labels, results = findMax(labels, results)
         text = labels + " " + str(results)
-        img = cv2.rectangle(img, (x-20, y-20), (x + w + 20, y + h +20), (0, 255, 0), 2)    
+        img = cv2.rectangle(img, (x-20, y-20), (x + w + 20, y + h +20), (0, 255, 0), 2)
         cv2.putText(img, text, (x-20, y+h+40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
     cv2.imshow('Inference', img)
@@ -274,7 +275,7 @@ if __name__ == "__main__":
 
     showMenu()
 
-    choice = input("Insert the number of the task: ")
+    choice = input("Insert the number of the task: ").strip()
     if (choice == '1'):
         facialRecognition()
 
@@ -289,5 +290,3 @@ if __name__ == "__main__":
 
     else:
         print("Please select an existing choice!")
-    
-
