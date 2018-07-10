@@ -66,7 +66,10 @@ def facialRecognition():
     and images cropping'''
 
     name = input("Insert your name: ")
-    dirName = input("Insert the dir where you want to save your images: ")
+    dirName = input("Insert the dir where you want to save your images(Default /tmp/images/yourName): ")
+    if (dirName == ""):
+        os.system("mkdir /tmp/images")
+        dirName = "/tmp/images"
     dirName = dirName + "/" + name
     os.system("mkdir " + dirName)
     sec = (int(round(time.time())))
@@ -81,12 +84,25 @@ def training():
 
     image_dir = input("Insert the directory path of images you want to use for the training: ")
     image_dir = " --image_dir "+image_dir
-    graph_dir = input("Insert the path where you want to save the output graph (+ name of the graph .pb): ")
+
+    graph_dir = input("Insert the path where you want to save the output graph (+ name of the graph .pb)(Default = /tmp/outputGraph/output_graph.pb): ")
+    if (graph_dir == ""):
+        os.system("mkdir /tmp/outputGraph")
+        graph_dir = "/tmp/outputGraph/output_graph.pb"
     graph_dir = " --output_graph "+graph_dir
-    labels_dir = input("Insert the path where you want to save the output labels (+ name of the labels .txt: ")
+
+    labels_dir = input("Insert the path where you want to save the output labels (+ name of the labels .txt)(Default = /tmp/labels/output_labels.txt): ")
+    if (labels_dir == ""):
+        os.system("mkdir /tmp/labels")
+        labels_dir = "/tmp/labels/output_labels.txt"
     labels_dir = " --output_labels "+labels_dir
-    bottleneck_dir = input("insert the path where you want to save bottlenecks: ")
-    bottleneck_dir = " --bottleneck_dir"+bottleneck_dir
+
+    bottleneck_dir = input("insert the path where you want to save bottlenecks(Default = /tmp/bottlenecks: ")
+    if (bottleneck_dir == ""):
+        os.system("mkdir /tmp/bottlenecks")
+        graph_dir = "/tmp/bottlenecks"
+    bottleneck_dir = " --bottleneck_dir "+bottleneck_dir
+
     os.system("python3 retrain.py"+image_dir+graph_dir+labels_dir+bottleneck_dir)
     print("Training terminated!") 
 
@@ -208,8 +224,13 @@ def makeInference():
     '''Main function to make inference'''
 
     img_dir = input("Insert the path of the image: ")
-    graph_path = input("Insert the graph's path: ")
-    labels_path = input("Insert the label's path: ")
+    graph_path = input("Insert the graph's path(Default = /tmp/outputGraph/output_graph.pb): ")
+    if (graph_path == ""):
+        graph_dir = "/tmp/outputGraph/output_graph.pb"
+
+    labels_path = input("Insert the label's path(Default = labels/output_labels.txt): ")
+    if (graph_path == ""):
+        graph_dir = "/tmp/labels/output_labels.txt"
 
     img = cv2.imread(img_dir)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
