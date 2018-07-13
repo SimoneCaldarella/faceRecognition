@@ -2,7 +2,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-__author__ = 'Simone Caldarella'
+__author__ = "Simone Caldarella"
+__copyright__ = "Copyright (C) 2018 Simone Caldarella"
+__license__ = "Apache 2.0"
+__version__ = "1.0"
 
 from imutils import face_utils
 
@@ -12,13 +15,21 @@ import imutils
 import numpy as np
 import operator
 import os
+import subprocess
 import sys
 import tensorflow as tf
 import time
+import tkinter as tk
+
+def bash_command(cmd):
+
+    '''Best way to run shell command from python'''
+
+    subprocess.Popen(['/bin/bash', '-c', cmd])
 
 ###############-First part, used to get images for the training-################
 
-def facialLandMarksRecognition(sec, dirName, name):
+def facialLandMarksRecognition(dirName, name):
 
     '''In this function the algorithm recognize your
     face and save every frames of the video keeping only the face'''
@@ -27,8 +38,9 @@ def facialLandMarksRecognition(sec, dirName, name):
     predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
     cam = cv2.VideoCapture(0)
-    timy = 25
+    timy = 6
     cont = 0
+    sec = (int(round(time.time())))
     deltaSec = (int(round(time.time()))) - sec
 
     while (deltaSec < timy):
@@ -39,7 +51,7 @@ def facialLandMarksRecognition(sec, dirName, name):
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         rects = detector(gray, 1)
         title = name+str(cont)+'.jpg'
-        dir = dirName + "/" + title
+        dir = os.path.join(dirName, title)
 
         for (i, rect) in enumerate(rects):
             shape = predictor(gray, rect)
@@ -49,15 +61,15 @@ def facialLandMarksRecognition(sec, dirName, name):
             img = image[y:y+h+10, x:x+w+10]
             cv2.imwrite(dir, img)
             cont = cont + 1
-            cv2.putText(image, "Face #{}".format(i + 1), (x - 10, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            cv2.putText(image, "Face #{} {}".format(i + 1, deltaSec), (x - 10, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
             for (x, y) in shape:
         	    cv2.circle(image, (x, y), 1, (0, 0, 255), -1)
 
         cv2.imshow("Output", image)
-        if (cv2.waitKey(1)==27):
-            break
+        cv2.waitKey(1)
 
+    cv2.waitKey(1)
     cv2.destroyAllWindows()
 
 def facialRecognition():
@@ -66,15 +78,13 @@ def facialRecognition():
     and images cropping'''
 
     name = input("Insert your name: ").strip()
-    dirName = input("Insert the dir where you want to save your images(Default /tmp/images/yourName): ").strip()
+    dirName = input("Insert the directory where you want to save your images(Default ./images/yourName): ").strip()
     if (dirName == ""):
-        os.system("mkdir /tmp/images")
-        dirName = "/tmp/images"
-    dirName = dirName + "/" + name
-    os.system("mkdir " + dirName)
-    sec = (int(round(time.time())))
-    deltaSec = (int(round(time.time()))) - sec
-    facialLandMarksRecognition(sec, dirName, name)
+        dirName = os.path.join(".", "images")
+        os.mkdir(dirName)
+    dirName = os.path.join(dirName, name)
+    os.mkdir(os.path.join(".", dirName))
+    facialLandMarksRecognition(dirName, name)
 
 ###############-Second part, used to make the training-##################
 
@@ -85,25 +95,25 @@ def training():
     image_dir = input("Insert the directory path of images you want to use for the training: ").strip()
     image_dir = " --image_dir "+image_dir
 
-    graph_dir = input("Insert the path where you want to save the output graph (+ name of the graph .pb)(Default = /tmp/outputGraph/output_graph.pb): ").strip()
+    graph_dir = input("Insert the path where you want to save the output graph (+ name of the graph .pb)(Default = ./outputGraph/output_graph.pb): ").strip()
     if (graph_dir == ""):
-        os.system("mkdir /tmp/outputGraph")
-        graph_dir = "/tmp/outputGraph/output_graph.pb"
+        os.mkdir(os.path.join(".","outputGraph"))
+        graph_dir = os.path.join(".", "outputGraph", "output_graph.pb")
     graph_dir = " --output_graph "+graph_dir
 
-    labels_dir = input("Insert the path where you want to save the output labels (+ name of the labels .txt)(Default = /tmp/labels/output_labels.txt): ").strip()
+    labels_dir = input("Insert the path where you want to save the output labels (+ name of the labels .txt)(Default = ./labels/output_labels.txt): ").strip()
     if (labels_dir == ""):
-        os.system("mkdir /tmp/labels")
-        labels_dir = "/tmp/labels/output_labels.txt"
+        os.mkdir(os.path.join(".", "labels"))
+        labels_dir = os.path.join(".", "labels", "output_labels.txt")
     labels_dir = " --output_labels "+labels_dir
 
-    bottleneck_dir = input("insert the path where you want to save bottlenecks(Default = /tmp/bottlenecks: ").strip()
+    bottleneck_dir = input("insert the path where you want to save bottlenecks(Default = ./bottlenecks: ").strip()
     if (bottleneck_dir == ""):
-        os.system("mkdir /tmp/bottlenecks")
-        graph_dir = "/tmp/bottlenecks"
+        os.mkdir(os.path.join(".", "bottlenecks"))
+        graph_dir = os.path.join(".", "bottlenecks")
     bottleneck_dir = " --bottleneck_dir "+bottleneck_dir
 
-    os.system("python3 retrain.py"+image_dir+graph_dir+labels_dir+bottleneck_dir)
+    bash_command("python3 retrain.py"+image_dir+graph_dir+labels_dir+bottleneck_dir)
     print("Training terminated!")
 
 ###############-Third part, used to make inference-################
@@ -225,13 +235,13 @@ def makeInference():
 
     img_dir = input("Insert the path of the image: ").strip()
 
-    graph_path = input("Insert the graph's path(Default = /tmp/outputGraph/output_graph.pb): ").strip()
+    graph_path = input("Insert the graph's path(Default = ./outputGraph/output_graph.pb): ").strip()
     if (graph_path == ""):
-        graph_dir = "/tmp/outputGraph/output_graph.pb"
+        graph_dir = os.path.join(".", "outputGraph", "output_graph.pb")
 
-    labels_path = input("Insert the label's path(Default = labels/output_labels.txt): ").strip()
+    labels_path = input("Insert the label's path(Default = ./labels/output_labels.txt): ").strip()
     if (graph_path == ""):
-        graph_dir = "/tmp/labels/output_labels.txt"
+        graph_dir = os.path.join(".", "labels", "output_labels.txt")
 
     img = cv2.imread(img_dir)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -256,10 +266,14 @@ def makeInference():
         cv2.putText(img, text, (x-20, y+h+40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
     cv2.imshow('Inference', img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    while (True):
+        if cv2.waitKey(0)==113:
+            break
+    cv2.destroyWindow("Inference")
 
 def showMenu():
+
+    os.bash_command("clear")
 
     print("@-----------------------------@")
     print("| 1) Prepare the dataset      |")
@@ -273,20 +287,24 @@ def showMenu():
 
 if __name__ == "__main__":
 
-    showMenu()
+    while (True):
 
-    choice = input("Insert the number of the task: ").strip()
-    if (choice == '1'):
-        facialRecognition()
+        showMenu()
 
-    elif (choice == '2'):
-        training()
+        choice = input("Insert the number of the task: ").strip()
 
-    elif (choice == '3'):
-        makeInference()
+        if (choice == '1'):
+            facialRecognition()
+            cv2.destroyAllWindows()
 
-    elif (choice == '4'):
-        exit(0)
+        elif (choice == '2'):
+            training()
 
-    else:
-        print("Please select an existing choice!")
+        elif (choice == '3'):
+            makeInference()
+
+        elif (choice == '4'):
+            exit(0)
+
+        else:
+            print("Please select an existing choice!")
