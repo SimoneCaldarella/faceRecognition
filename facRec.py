@@ -19,7 +19,6 @@ import subprocess
 import sys
 import tensorflow as tf
 import time
-import tkinter as tk
 
 def bash_command(cmd):
 
@@ -36,9 +35,12 @@ def facialRecognition():
 
     name = input("Insert your name: ").strip()
     dirName = input("Insert the directory where you want to save your images(Default ./images/yourName): ").strip()
-    if (dirName == ""):
+    if dirName == "":
         dirName = os.path.join(".", "images")
-        os.mkdir(dirName)
+        try:
+            os.mkdir(dirName)
+        except:
+            print("Folder already exists")
     dirName = os.path.join(dirName, name)
     try:
         os.mkdir(os.path.join(".", dirName))
@@ -56,20 +58,29 @@ def training():
     image_dir = " --image_dir "+image_dir
 
     graph_dir = input("Insert the path where you want to save the output graph (+ name of the graph .pb)(Default = ./outputGraph/output_graph.pb): ").strip()
-    if (graph_dir == ""):
-        os.mkdir(os.path.join(".","outputGraph"))
+    if graph_dir == "":
+        try:
+            os.mkdir(os.path.join(".","outputGraph"))
+        except:
+            print("Folder already exists")
         graph_dir = os.path.join(".", "outputGraph", "output_graph.pb")
     graph_dir = " --output_graph "+graph_dir
 
     labels_dir = input("Insert the path where you want to save the output labels (+ name of the labels .txt)(Default = ./labels/output_labels.txt): ").strip()
-    if (labels_dir == ""):
-        os.mkdir(os.path.join(".", "labels"))
+    if labels_dir == "":
+        try:
+            os.mkdir(os.path.join(".", "labels"))
+        except:
+            print("Folder already exists")
         labels_dir = os.path.join(".", "labels", "output_labels.txt")
     labels_dir = " --output_labels "+labels_dir
 
     bottleneck_dir = input("insert the path where you want to save bottlenecks(Default = ./bottlenecks: ").strip()
-    if (bottleneck_dir == ""):
-        os.mkdir(os.path.join(".", "bottlenecks"))
+    if bottleneck_dir == "":
+        try:
+            os.mkdir(os.path.join(".", "bottlenecks"))
+        except:
+            print("Folder already exists")
         graph_dir = os.path.join(".", "bottlenecks")
     bottleneck_dir = " --bottleneck_dir "+bottleneck_dir
 
@@ -85,11 +96,11 @@ def makeInference():
     img_dir = input("Insert the path of the image: ").strip()
 
     graph_path = input("Insert the graph's path(Default = ./outputGraph/output_graph.pb): ").strip()
-    if (graph_path == ""):
+    if graph_path == "":
         graph_path = os.path.join(".", "outputGraph", "output_graph.pb")
 
     labels_path = input("Insert the label's path(Default = ./labels/output_labels.txt): ").strip()
-    if (labels_path == ""):
+    if labels_path == "":
         labels_path = os.path.join(".", "labels", "output_labels.txt")
 
     bash_command("python3 inference.py " + img_dir + " " + graph_path + " " + labels_path)
@@ -114,20 +125,20 @@ if __name__ == "__main__":
 
         choice = input("Insert the number of the task: ").strip()
 
-        if (choice == '1'):
+        if choice == '1':
             facialRecognition()
             bash_command("clear")
 
 
-        elif (choice == '2'):
+        elif choice == '2':
             training()
             bash_command("clear")
 
-        elif (choice == '3'):
+        elif choice == '3':
             makeInference()
             bash_command("clear")
 
-        elif (choice == '4'):
+        elif choice == '4':
             exit(0)
 
         else:
