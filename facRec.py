@@ -54,7 +54,9 @@ def training():
 
     '''This is the main function for the training'''
 
-    image_dir = input("Insert the directory path of images you want to use for the training: ").strip()
+    image_dir = input("Insert the directory path of images you want to use for the training(Default = ./images): ").strip()
+    if image_dir == "":
+        image_dir = os.path.join(".","images")
     image_dir = " --image_dir "+image_dir
 
     graph_dir = input("Insert the path where you want to save the output graph (+ name of the graph .pb)(Default = ./outputGraph/output_graph.pb): ").strip()
@@ -84,7 +86,7 @@ def training():
         graph_dir = os.path.join(".", "bottlenecks")
     bottleneck_dir = " --bottleneck_dir "+bottleneck_dir
 
-    bash_command("python3 retrain.py"+image_dir+graph_dir+labels_dir+bottleneck_dir)
+    bash_command("python3 retrain.py" + image_dir + graph_dir + labels_dir + bottleneck_dir)
     print("Training terminated!")
 
 ###############-Third part, used to make inference-################
