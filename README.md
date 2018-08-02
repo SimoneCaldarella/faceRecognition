@@ -13,3 +13,7 @@ After training the network you can use the it. But how?
 I wrote a second script with which you can do inference. You only need to “feed” the script with an image with one or more people (among those present in the training images) and the script (with openCv and tensorflow) will provide to write under their faces the most probable name corresponding to the person.
 
 The goal of the project should be to use those scripts to recognize people that passes somewhere (if they are already known) and keep trace about it.
+
+Here some helpful links: 
+Tflearn models [https://github.com/tflearn/tflearn/tree/master/examples/images]
+Tensorflow-hub pre-trained models [https://www.tensorflow.org/hub/modules/]
