@@ -14,6 +14,7 @@ I wrote a second script with which you can do inference. You only need to “fee
 
 The goal of the project should be to use those scripts to recognize people that passes somewhere (if they are already known) and keep trace about it.
 
-Here some helpful links: 
+Here some helpful links:
+
 Tflearn models [https://github.com/tflearn/tflearn/tree/master/examples/images]
 Tensorflow-hub pre-trained models [https://www.tensorflow.org/hub/modules/]
