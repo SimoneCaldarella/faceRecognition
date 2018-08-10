@@ -16,5 +16,4 @@ The goal of the project should be to use those scripts to recognize people that 
 
 Here some helpful links:
 
-Tflearn models [https://github.com/tflearn/tflearn/tree/master/examples/images]
-Tensorflow-hub pre-trained models [https://www.tensorflow.org/hub/modules/]
+Tflearn models [https://github.com/tflearn/tflearn/tree/master/examples/images]                                          Tensorflow-hub pre-trained models [https://www.tensorflow.org/hub/modules/]
