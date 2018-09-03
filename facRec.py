@@ -77,15 +77,15 @@ def training():
         labels_dir = os.path.join(".", "labels", "output_labels.txt")
     labels_dir = " --output_labels "+labels_dir
 
-    bottleneck_dir = input("insert the path where you want to save bottlenecks(Default = ./bottlenecks: ").strip()
+    bottleneck_dir = input("insert the path where you want to save bottlenecks(Default = ./bottlenecks): ").strip()
     if bottleneck_dir == "":
         try:
             os.mkdir(os.path.join(".", "bottlenecks"))
         except:
             print("Folder already exists")
-        graph_dir = os.path.join(".", "bottlenecks")
+        bottleneck_dir = os.path.join(".", "bottlenecks")
     bottleneck_dir = " --bottleneck_dir "+bottleneck_dir
-
+    
     bash_command("python3 retrain.py" + image_dir + graph_dir + labels_dir + bottleneck_dir)
     print("Training terminated!")
 
