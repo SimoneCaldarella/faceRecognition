@@ -61,7 +61,39 @@
 	\end{multicols}
 \end{frame}
 
+%#####################################INTRODUCTION############################################################
+
 \section{Introduction}
+
+\subsection{Motivation}
+
+\begin{frame}{Motivation}
+	\begin{itemize}
+		\setbeamertemplate{itemize items}[triangle]
+		\setbeamercolor{itemize item}{fg=red}
+		\item
+    			Create a ground for recognition problems
+		\item
+			Show the power of retraining
+	\end{itemize}
+\end{frame}
+
+
+\subsection{Target}
+\begin{frame}{Target}
+	\begin{itemize}
+	\setbeamertemplate{itemize items}[triangle]
+		\setbeamercolor{itemize item}{fg=red}
+		\item
+    			Detect and recognize different faces in photos
+		\item
+			Use a computer vision's framework (OpenCv) and a machine learning framework (Tensorflow)
+	\end{itemize}
+\end{frame}
+
+%#####################################BACKGROUND############################################################
+
+\section{Background}
 
 \subsection{Machine learning}
 
@@ -81,28 +113,40 @@
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
   		\item 
-			The concept of \texttt{training}
+			The concept of \textbf{training}:
     			\begin{itemize}
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
     				\item
-      					Minimize the loss
+      					input and output;
     				\item    
-      					Loss functions
+      					inference and loss function;
    				\item
-					Weights update
+					gradient descent and weights update.
 			\end{itemize}
 		\item
-    			The importance of a large and well organized dataset
+    			The importance of a large and well organized dataset:
     			\begin{itemize}
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
    				\item 
-					Common problems
+					common problems;
     				\item 
-					Cognitive bias
+					cognitive bias.
     			\end{itemize}
  	 \end{itemize}
+\end{frame}
+
+\begin{frame}{Training and gradient descent}
+	\begin{center}
+    		\includegraphics[scale=0.4]{grad}
+	\end{center}
+\end{frame}
+
+\begin{frame}{A more complex gradient descent loss}
+	\begin{center}
+    		\includegraphics[scale=0.3]{suchcomp}
+	\end{center}
 \end{frame}
 
 \subsection{Tensorflow and OpenCv}
@@ -120,37 +164,65 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{Tensorflow and OpenCv}
+\begin{frame}{Tensorflow}
 	\begin{itemize}
 		\setlength\itemsep{1em}
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
-		\item 
-			Low level and high level API
+		\item
+			Why Tensorflow?
 			\begin{itemize}
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
 				\item 
-					Tensorflow functions
+					Tensors and use of computational graph;
 				\item 
-					Keras and tflearn
+					different levels of abstraction.
 			\end{itemize}
 		\item 
-			OpenCv "magic" detection algorithm
+			Low level and high level API:
 			\begin{itemize}
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
 				\item 
-					HaarCascadeClassifier
+					Tensorflow functions;
 				\item 
-					Dlib library for facial features detection
+					Keras and tflearn.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{OpenCV}
+	\begin{itemize}
+		\setlength\itemsep{1em}
+		\setbeamertemplate{itemize item}[triangle]
+		\setbeamercolor{itemize item}{fg=red}
+		\item
+			Why OpenCV?
+			\begin{itemize}
+				\setbeamertemplate{itemize subitem}[circle]
+				\setbeamercolor{itemize subitem}{fg=red}
+				\item 
+					Very fast;
+				\item 
+					lots of library and algorithm at the state-of-art.
+			\end{itemize}
+		\item 
+			OpenCv detection algorithm:
+			\begin{itemize}
+				\setbeamertemplate{itemize subitem}[circle]
+				\setbeamercolor{itemize subitem}{fg=red}
+				\item 
+					HaarCascadeClassifier;
+				\item 
+					Dlib library for facial features detection.
 			\end{itemize}
 	\end{itemize}
 \end{frame}
 
 
 
-\section{Image classification}
+%\section{Image classification}
 
 \subsection{Convolutional Neural Network}
 
@@ -166,8 +238,22 @@
 		\item 
 			Convolutional matrix (Kernel)
 	\end{itemize}
+	%\begin{center}
+		%\includegraphics[scale=0.2]{kernel}
+		%\includegraphics[scale=0.2]{conv}
+	%\end{center}
+	%\begin{figure}
+		%\centering
+		%\includegraphics[width=.49\textwidth]{kernel}\hfil
+		%\includegraphics[width=.49\textwidth]{conv}
+	%\end{figure}
 	\begin{center}
-		\includegraphics[scale=0.2]{kernel}
+	\begin{minipage}{6in}
+  		%\centering
+  			$\vcenter{\hbox{\includegraphics[scale=0.2]{kernel}}}$
+ 			 \hspace*{.2in}
+  			$\vcenter{\hbox{\includegraphics[scale=0.27]{conv}}}$
+	\end{minipage}
 	\end{center}
 	\begin{itemize}
 		\setlength\itemsep{1em}
@@ -176,14 +262,14 @@
 		\item 
 			3x3, 5x5, or 7x7, why only odd numbers?
 		\item 
-			Edge detection
+			Edge detection:
 			\begin{itemize}
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
 				\item 
-					Similarity with human vision
+					Similarity with human vision;
 				\item 
-					From simple to complex forms
+					From simple to complex forms.
 			\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -208,6 +294,8 @@
 			Fully connected layers are the last layer of the CNN
 		\item 
 			Once the high-level features are recognized, they deal with classifications
+		\item
+			Dropout regolarization
 	\end{itemize}
 	\begin{center}
 		\includegraphics[scale=0.35]{dropout}
@@ -250,23 +338,14 @@
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
 				\item 
-					made with hundreds of images
+					made with hundreds of images;
 				\item 
-					different images with different colors to help the network classify them better
-			\end{itemize}
-		\item 
-			How the script works?
-			\begin{itemize}
-				\setbeamertemplate{itemize subitem}[circle]
-				\setbeamercolor{itemize subitem}{fg=red}
-				\item 
-					It use some OpenCv functions to get hundreds of photos in less than 30 seconds
-				\item 
-					After that, crop them and saves them
-				\item
-					This is made to avoid the recognition of unwanted features as background color without 							the need of hundreds of images taken in different places
+					different images with different colors to help the network classify them better.
 			\end{itemize}
 	\end{itemize}
+	\begin{center}
+		\includegraphics[scale=0.3]{datasets}
+	\end{center}
 \end{frame}
 
 \subsection{ImageNet}
@@ -282,11 +361,11 @@
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
 				\item 
-					it's a large visual database designed for use in visual object recognition software research
+					large visual database designed for visual object recognition software research;
 				\item 
-					ImageNet contains over 20 thousand categories; a typical category, such as "balloon" or 							"strawberry", contains several hundred images.
+					it contains over 20 thousand categories( "balloon", "strawberry", etc...);
 				\item
-					all the images are labelled and this i fundamental for machine learning works on it
+					all the images are labelled.
 			\end{itemize}
 		\item 
 			ImageNet Large Scale Visual Recognition Challenge (ILSVRC):
@@ -294,9 +373,9 @@
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
 				\item 
-					is a competition where research teams evaluate their algorithms on the given data								set(ImageNet)
+					is a competition where research teams evaluate their algorithms on the given data								set(ImageNet);
 				\item 
-					they compete to achieve higher accuracy on several visual recognition tasks
+					they compete to achieve higher accuracy on several visual recognition tasks.
 			\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -314,13 +393,13 @@
 	\begin{center}
 		\includegraphics[scale=0.28]{inception}
 	\end{center}
-	\begin{itemize}
-		\setlength\itemsep{1em}
-		\setbeamertemplate{itemize item}[triangle]
-		\setbeamercolor{itemize item}{fg=red}
-		\item 
-			Here an example: \href{https://bit.ly/2vBgoO3}{\color{red}GoogleNet}
-	\end{itemize}
+	%\begin{itemize}
+		%\setlength\itemsep{1em}
+		%\setbeamertemplate{itemize item}[triangle]
+		%\setbeamercolor{itemize item}{fg=red}
+		%\item 
+			%Here an example: \href{https://bit.ly/2vBgoO3}{\color{red}GoogleNet}
+	%\end{itemize}
 \end{frame}
 
 \subsection{Tensorflow and retraining}
@@ -334,10 +413,68 @@
 			Concept of retraining
 		\item 
 			Tensorflow-hub: the key to create your own classifier with good result and without a Tesla k80
-		\item 
-			Everything you need to know about retrain: \href{https://www.tensorflow.org/hub/tutorials/						image_retraining}{\color{red}tensorflow retraining}
 	\end{itemize}
 \end{frame}
+%#####################################PROPOSAL############################################################
+
+\section{Proposal}
+
+\subsection{Obtain images}
+
+\begin{frame}{Obtain images}
+	\begin{itemize}
+		\setlength\itemsep{1em}
+		\setbeamertemplate{itemize item}[triangle]
+		\setbeamercolor{itemize item}{fg=red}
+
+			\item 
+				It use some OpenCv functions to get hundreds of photos in less than 30 seconds;
+			\item 
+				after that, it crops them keeping only the faces(using a face detection algorithm) and it saves them;
+			\item
+				this is made to avoid the recognition of unwanted features as background color without 							the need of hundreds of images taken in different places.
+		
+	\end{itemize}
+\end{frame}
+
+\subsection{Training (or retraining)}
+
+\begin{frame}{Training}
+\begin{itemize}
+		\setlength\itemsep{1em}
+		\setbeamertemplate{itemize item}[triangle]
+		\setbeamercolor{itemize item}{fg=red}
+		
+			\item 
+				The algorithm takes the cropped pics and use them as dataset for the training;
+			\item 
+				in fact only the fully connected layers are trained;
+			\item
+				relatively fast.
+		
+	\end{itemize}
+\end{frame}
+
+\subsection{Inference}
+\begin{frame}{Inference}
+\begin{itemize}
+		\setlength\itemsep{1em}
+		\setbeamertemplate{itemize item}[triangle]
+		\setbeamercolor{itemize item}{fg=red}
+		
+			\item 
+				Choose a pic with multiple faces that you want to recognize/classify;
+			\item 
+				select the graph you want to use for inference;
+			\item
+				you should obtain the original photo with multiple boxes around all the faces and, under each of them, the name of the most probable person.
+		
+	\end{itemize}
+\end{frame}
+
+
+
+%#####################################SUMMARY############################################################
 
 \section{Summary}
 
@@ -398,6 +535,10 @@
 			Tensorflow: \href{https://www.tensorflow.org}{\color{red}Link to Tensorflow page}
 		\item 
 			OpenCv: \href{https://opencv.org}{\color{red}Link to OpenCv project}
+		\item 
+			Convolutional Neural Network example: \href{https://bit.ly/2vBgoO3}{\color{red}GoogleNet}
+		\item 
+			Tensorflow retrain: \href{https://www.tensorflow.org/hub/tutorials/image_retraining}{\color{red}tensorflow retraining}
 	\end{itemize}
 \end{frame}
 

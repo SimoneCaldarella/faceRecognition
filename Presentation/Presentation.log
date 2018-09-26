@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.18)  3 SEP 2018 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.18)  26 SEP 2018 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,152 +929,206 @@ entation.toc) [2
 (./Presentation.toc) [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+LaTeX Font Info:    Try loading font information for U+msa on input line 79.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+LaTeX Font Info:    Try loading font information for U+msb on input line 79.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 76.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 79.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 76.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 79.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 76.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 76.
-<./images/neuralNet.jpg, id=152, 642.4pt x 293.095pt>
-File: ./images/neuralNet.jpg Graphic file (type jpg)
-<use ./images/neuralNet.jpg>
-Package pdftex.def Info: ./images/neuralNet.jpg  used on input line 76.
-(pdftex.def)             Requested size: 321.19922pt x 146.54713pt.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 79.
  [4
 
- <./images/neuralNet.jpg>]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 106.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 106.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 106.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 106.
+]
+(./Presentation.toc) [5
 
-[5
+] [6
 
-] (./Presentation.toc) [6
+] (./Presentation.toc) [7
 
 ]
-<./images/comp.png, id=195, 519.9425pt x 398.48875pt>
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 108.
+<./images/neuralNet.jpg, id=266, 642.4pt x 293.095pt>
+File: ./images/neuralNet.jpg Graphic file (type jpg)
+<use ./images/neuralNet.jpg>
+Package pdftex.def Info: ./images/neuralNet.jpg  used on input line 108.
+(pdftex.def)             Requested size: 321.19922pt x 146.54713pt.
+ [8
+
+ <./images/neuralNet.jpg>]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 138.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 138.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 138.
+ [9
+
+]
+<./images/grad.png, id=285, 682.55pt x 449.68pt>
+File: ./images/grad.png Graphic file (type png)
+<use ./images/grad.png>
+Package pdftex.def Info: ./images/grad.png  used on input line 144.
+(pdftex.def)             Requested size: 273.01517pt x 179.8688pt.
+ [10
+
+ <./images/grad.png>]
+<./images/suchcomp.png, id=297, 676.5275pt x 566.115pt>
+File: ./images/suchcomp.png Graphic file (type png)
+<use ./images/suchcomp.png>
+Package pdftex.def Info: ./images/suchcomp.png  used on input line 150.
+(pdftex.def)             Requested size: 202.95981pt x 169.8358pt.
+ [11
+
+ <./images/suchcomp.png (PNG copy)>]
+(./Presentation.toc) [12
+
+]
+<./images/comp.png, id=333, 519.9425pt x 398.48875pt>
 File: ./images/comp.png Graphic file (type png)
 <use ./images/comp.png>
-Package pdftex.def Info: ./images/comp.png  used on input line 121.
+Package pdftex.def Info: ./images/comp.png  used on input line 165.
 (pdftex.def)             Requested size: 207.97331pt x 159.39267pt.
- [7
+ [13
 
- <./images/comp.png>] [8
+ <./images/comp.png>] [14
 
-] (./Presentation.toc)
-[9
+] [15
 
 ]
-<./images/CNN.png, id=235, 774.895pt x 345.29pt>
+(./Presentation.toc) [16
+
+]
+<./images/CNN.png, id=387, 774.895pt x 345.29pt>
 File: ./images/CNN.png Graphic file (type png)
 <use ./images/CNN.png>
-Package pdftex.def Info: ./images/CNN.png  used on input line 159.
+Package pdftex.def Info: ./images/CNN.png  used on input line 231.
 (pdftex.def)             Requested size: 348.69952pt x 155.37904pt.
 
-Overfull \hbox (6.40422pt too wide) in paragraph at lines 159--159
+Overfull \hbox (6.40422pt too wide) in paragraph at lines 231--231
 [][]  
  []
 
-[10
+[17
 
  <./images/CNN.png (PNG copy)>]
-<./images/kernel.jpg, id=244, 691.08188pt x 491.58656pt>
+<./images/kernel.jpg, id=396, 691.08188pt x 491.58656pt>
 File: ./images/kernel.jpg Graphic file (type jpg)
 <use ./images/kernel.jpg>
-Package pdftex.def Info: ./images/kernel.jpg  used on input line 189.
+Package pdftex.def Info: ./images/kernel.jpg  used on input line 275.
 (pdftex.def)             Requested size: 138.21391pt x 98.31557pt.
- [11
+<./images/conv.png, id=397, 602.25pt x 220.825pt>
+File: ./images/conv.png Graphic file (type png)
+<use ./images/conv.png>
+Package pdftex.def Info: ./images/conv.png  used on input line 275.
+(pdftex.def)             Requested size: 162.60966pt x 59.62354pt.
 
- <./images/kernel.jpg>]
-<./images/pooling.png, id=253, 999.735pt x 292.09125pt>
+Overfull \hbox (91.32469pt too wide) in paragraph at lines 275--275
+ []$ 
+ []
+
+[18
+
+ <./images/kernel.jpg> <./images/conv.png>]
+<./images/pooling.png, id=408, 999.735pt x 292.09125pt>
 File: ./images/pooling.png Graphic file (type png)
 <use ./images/pooling.png>
-Package pdftex.def Info: ./images/pooling.png  used on input line 200.
+Package pdftex.def Info: ./images/pooling.png  used on input line 286.
 (pdftex.def)             Requested size: 349.91249pt x 102.23346pt.
 
-Overfull \hbox (7.61719pt too wide) in paragraph at lines 200--200
+Overfull \hbox (7.61719pt too wide) in paragraph at lines 286--286
 []  
  []
 
-[12
+[19
 
  <./images/pooling.png>]
-<./images/dropout.jpeg, id=264, 616.3025pt x 329.23pt>
+<./images/dropout.jpeg, id=419, 616.3025pt x 329.23pt>
 File: ./images/dropout.jpeg Graphic file (type jpg)
 <use ./images/dropout.jpeg>
-Package pdftex.def Info: ./images/dropout.jpeg  used on input line 215.
+Package pdftex.def Info: ./images/dropout.jpeg  used on input line 303.
 (pdftex.def)             Requested size: 215.7091pt x 115.23222pt.
- [13
-
- <./images/dropout.jpeg>]
-<./images/ReLU.jpeg, id=274, 706.64pt x 274.02374pt>
-File: ./images/ReLU.jpeg Graphic file (type jpg)
-<use ./images/ReLU.jpeg>
-Package pdftex.def Info: ./images/ReLU.jpeg  used on input line 238.
-(pdftex.def)             Requested size: 141.32549pt x 54.80377pt.
-<./images/softmax1.jpg, id=275, 499.8675pt x 216.81pt>
-File: ./images/softmax1.jpg Graphic file (type jpg)
-<use ./images/softmax1.jpg>
-Package pdftex.def Info: ./images/softmax1.jpg  used on input line 238.
-(pdftex.def)             Requested size: 99.97173pt x 43.36122pt.
- [14
-
- <./images/ReLU.jpeg> <./images/softmax1.jpg>] (./Presentation.toc) [15
-
-] [16
-
-] (./Presentation.toc) [17
-
-] [18
-
-] (./Presentation.toc) [19
-
-]
-<./images/inception.png, id=365, 826.08624pt x 519.9425pt>
-File: ./images/inception.png Graphic file (type png)
-<use ./images/inception.png>
-Package pdftex.def Info: ./images/inception.png  used on input line 324.
-(pdftex.def)             Requested size: 231.30257pt x 145.5829pt.
  [20
 
- <./images/inception.png>]
-(./Presentation.toc) [21
+ <./images/dropout.jpeg>]
+<./images/ReLU.jpeg, id=428, 706.64pt x 274.02374pt>
+File: ./images/ReLU.jpeg Graphic file (type jpg)
+<use ./images/ReLU.jpeg>
+Package pdftex.def Info: ./images/ReLU.jpeg  used on input line 326.
+(pdftex.def)             Requested size: 141.32549pt x 54.80377pt.
+<./images/softmax1.jpg, id=429, 499.8675pt x 216.81pt>
+File: ./images/softmax1.jpg Graphic file (type jpg)
+<use ./images/softmax1.jpg>
+Package pdftex.def Info: ./images/softmax1.jpg  used on input line 326.
+(pdftex.def)             Requested size: 99.97173pt x 43.36122pt.
+ [21
 
-] [22
-
-] (./Presentation.toc) [23
-
-] [24
+ <./images/ReLU.jpeg> <./images/softmax1.jpg>] (./Presentation.toc) [22
 
 ]
-(./Presentation.toc) [25
+<./images/datasets.png, id=465, 892.33376pt x 272.01625pt>
+File: ./images/datasets.png Graphic file (type png)
+<use ./images/datasets.png>
+Package pdftex.def Info: ./images/datasets.png  used on input line 349.
+(pdftex.def)             Requested size: 267.7022pt x 81.6055pt.
+ [23
 
-] [26
+ <./images/datasets.png (PNG copy)>] (./Presentation.toc) [24
 
-] (./Presentation.toc) [27
+] [25
 
-] [28
+] (./Presentation.toc) [26
+
+]
+<./images/inception.png, id=538, 807.015pt x 440.64626pt>
+File: ./images/inception.png Graphic file (type png)
+<use ./images/inception.png>
+Package pdftex.def Info: ./images/inception.png  used on input line 403.
+(pdftex.def)             Requested size: 225.96266pt x 123.3801pt.
+
+[27
+
+ <./images/inception.png>] (./Presentation.toc) [28
 
 ] [29
+
+]
+(./Presentation.toc) [30
+
+] [31
+
+] (./Presentation.toc) [32
+
+] [33
+
+]
+(./Presentation.toc) [34
+
+] [35
+
+] (./Presentation.toc) [36
+
+] [37
+
+]
+(./Presentation.toc) [38
+
+] [39
+
+] (./Presentation.toc) [40
+
+] [41
+
+] [42
 
 ]
 \tf@nav=\write6
@@ -1086,33 +1140,32 @@ Package pdftex.def Info: ./images/inception.png  used on input line 324.
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 404.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 404.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 545.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 545.
 
 (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 404.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 404.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 545.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 545.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 858BE4C1269D4C041C660B665D73CB97;969.
+(rerunfilecheck)             Checksum: FE40D07E3D6A61FE99B79598906E9D41;1322.
  ) 
 Here is how much of TeX's memory you used:
- 18160 strings out of 492649
- 341839 string characters out of 6129622
- 429851 words of memory out of 5000000
- 21508 multiletter control sequences out of 15000+600000
- 45773 words of font info for 68 fonts, out of 8000000 for 9000
+ 18247 strings out of 492649
+ 343029 string characters out of 6129622
+ 433855 words of memory out of 5000000
+ 21554 multiletter control sequences out of 15000+600000
+ 45152 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,65p,816b,751s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Presentation.pdf (29 pages, 540905 bytes).
+l/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on Presentation.pdf (42 pages, 1211850 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 479 compressed objects within 5 object streams
- 75 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 854 PDF objects out of 1000 (max. 8388607)
+ 766 compressed objects within 8 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
