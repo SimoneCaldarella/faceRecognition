@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.18)  10 OCT 2018 15:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.18)  10 OCT 2018 21:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,24 +748,28 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 29.
+
 (./Presentation.aux)
 \openout1 = `Presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 54.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -836,7 +840,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box80
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 54.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -846,56 +850,56 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count172
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (./Presentation.out) (./Presentation.out)
 \@outlinefile=\write5
 \openout5 = `Presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 52.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 54.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/ptm/m/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 52.
+(Font)                  OT1/cmss/m/n --> T1/ptm/m/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 52.
+(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 52.
+(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 52.
+(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 52.
+(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 52.
+(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 52.
+(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 52.
+(Font)                  OT1/cmtt/m/n --> T1/pcr/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 52.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 52.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/ptm/bx/n on input line 52.
+(Font)                  OT1/cmss/bx/n --> T1/ptm/bx/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 52.
+(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 52.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 52.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/pcr/m/n --> T1/pcr/bx/n on input line 52.
+(Font)                  T1/pcr/m/n --> T1/pcr/bx/n on input line 54.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -920,215 +924,211 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/local/texlive/2018/texmf-dist/tex/latex/translator/translator-theorem-dic
 tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./Presentation.nav) [1
+) (./Presentation.nav)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 58.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 58.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Pres
-entation.toc) [2
+entation.toc)
+[2
 
 ]
-(./Presentation.toc) [3
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 79.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 95.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 79.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 95.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 79.
- [4
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 95.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 95.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 95.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 95.
+ [3
 
 ]
-(./Presentation.toc) [5
-
-] [6
-
-] (./Presentation.toc) [7
+(./Presentation.toc) [4
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 108.
-<./images/neuralNet.jpg, id=266, 642.4pt x 293.095pt>
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 114.
+<./images/neuralNet.jpg, id=177, 642.4pt x 293.095pt>
 File: ./images/neuralNet.jpg Graphic file (type jpg)
 <use ./images/neuralNet.jpg>
-Package pdftex.def Info: ./images/neuralNet.jpg  used on input line 108.
+Package pdftex.def Info: ./images/neuralNet.jpg  used on input line 114.
 (pdftex.def)             Requested size: 321.19922pt x 146.54713pt.
- [8
+ [5
 
- <./images/neuralNet.jpg>]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 138.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 138.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 138.
- [9
+ <./images/neuralNet.jpg>] [6
 
 ]
-<./images/grad.png, id=285, 682.55pt x 449.68pt>
+<./images/grad.png, id=194, 675.52374pt x 398.48875pt>
 File: ./images/grad.png Graphic file (type png)
 <use ./images/grad.png>
-Package pdftex.def Info: ./images/grad.png  used on input line 144.
-(pdftex.def)             Requested size: 273.01517pt x 179.8688pt.
- [10
+Package pdftex.def Info: ./images/grad.png  used on input line 150.
+(pdftex.def)             Requested size: 270.20471pt x 159.39267pt.
+ [7
 
  <./images/grad.png>]
-<./images/suchcomp.png, id=297, 676.5275pt x 566.115pt>
+<./images/suchcomp.png, id=206, 162.3666pt x 135.8676pt>
 File: ./images/suchcomp.png Graphic file (type png)
 <use ./images/suchcomp.png>
-Package pdftex.def Info: ./images/suchcomp.png  used on input line 150.
-(pdftex.def)             Requested size: 202.95981pt x 169.8358pt.
- [11
+Package pdftex.def Info: ./images/suchcomp.png  used on input line 156.
+(pdftex.def)             Requested size: 211.07654pt x 176.62782pt.
+ [8
 
- <./images/suchcomp.png (PNG copy)>]
-(./Presentation.toc) [12
+ <./images/suchcomp.png>] (./Presentation.toc) [9
 
 ]
-<./images/comp.png, id=333, 519.9425pt x 398.48875pt>
+<./images/comp.png, id=238, 519.9425pt x 398.48875pt>
 File: ./images/comp.png Graphic file (type png)
 <use ./images/comp.png>
-Package pdftex.def Info: ./images/comp.png  used on input line 165.
+Package pdftex.def Info: ./images/comp.png  used on input line 171.
 (pdftex.def)             Requested size: 207.97331pt x 159.39267pt.
- [13
+ [10
 
- <./images/comp.png>] [14
+ <./images/comp.png>] [11
 
-] [15
+] [12
+
+] (./Presentation.toc) [13
 
 ]
-(./Presentation.toc) [16
-
-]
-<./images/CNN.png, id=387, 774.895pt x 345.29pt>
+<./images/CNN.png, id=289, 774.895pt x 345.29pt>
 File: ./images/CNN.png Graphic file (type png)
 <use ./images/CNN.png>
-Package pdftex.def Info: ./images/CNN.png  used on input line 231.
+Package pdftex.def Info: ./images/CNN.png  used on input line 237.
 (pdftex.def)             Requested size: 348.69952pt x 155.37904pt.
 
-Overfull \hbox (6.40422pt too wide) in paragraph at lines 231--231
+Overfull \hbox (6.40422pt too wide) in paragraph at lines 237--237
 [][]  
  []
 
-[17
+[14
 
  <./images/CNN.png (PNG copy)>]
-<./images/kernel.jpg, id=396, 691.08188pt x 491.58656pt>
+<./images/kernel.jpg, id=298, 691.08188pt x 491.58656pt>
 File: ./images/kernel.jpg Graphic file (type jpg)
 <use ./images/kernel.jpg>
-Package pdftex.def Info: ./images/kernel.jpg  used on input line 275.
+Package pdftex.def Info: ./images/kernel.jpg  used on input line 281.
 (pdftex.def)             Requested size: 138.21391pt x 98.31557pt.
-<./images/conv.png, id=397, 602.25pt x 220.825pt>
+<./images/conv.png, id=299, 602.25pt x 220.825pt>
 File: ./images/conv.png Graphic file (type png)
 <use ./images/conv.png>
-Package pdftex.def Info: ./images/conv.png  used on input line 275.
+Package pdftex.def Info: ./images/conv.png  used on input line 281.
 (pdftex.def)             Requested size: 162.60966pt x 59.62354pt.
 
-Overfull \hbox (91.32469pt too wide) in paragraph at lines 275--275
+Overfull \hbox (91.32469pt too wide) in paragraph at lines 281--281
  []$ 
  []
 
-[18
+[15
 
  <./images/kernel.jpg> <./images/conv.png>]
-<./images/pooling.png, id=408, 999.735pt x 292.09125pt>
+<./images/pooling.png, id=309, 999.735pt x 292.09125pt>
 File: ./images/pooling.png Graphic file (type png)
 <use ./images/pooling.png>
-Package pdftex.def Info: ./images/pooling.png  used on input line 286.
+Package pdftex.def Info: ./images/pooling.png  used on input line 292.
 (pdftex.def)             Requested size: 349.91249pt x 102.23346pt.
 
-Overfull \hbox (7.61719pt too wide) in paragraph at lines 286--286
+Overfull \hbox (7.61719pt too wide) in paragraph at lines 292--292
 []  
  []
 
-[19
+[16
 
  <./images/pooling.png>]
-<./images/dropout.jpeg, id=419, 616.3025pt x 329.23pt>
+<./images/dropout.jpeg, id=319, 613.29124pt x 296.10625pt>
 File: ./images/dropout.jpeg Graphic file (type jpg)
 <use ./images/dropout.jpeg>
-Package pdftex.def Info: ./images/dropout.jpeg  used on input line 303.
-(pdftex.def)             Requested size: 215.7091pt x 115.23222pt.
- [20
+Package pdftex.def Info: ./images/dropout.jpeg  used on input line 309.
+(pdftex.def)             Requested size: 214.65514pt x 103.63873pt.
+ [17
 
  <./images/dropout.jpeg>]
-<./images/ReLU.jpeg, id=428, 706.64pt x 274.02374pt>
+<./images/ReLU.jpeg, id=329, 706.64pt x 274.02374pt>
 File: ./images/ReLU.jpeg Graphic file (type jpg)
 <use ./images/ReLU.jpeg>
-Package pdftex.def Info: ./images/ReLU.jpeg  used on input line 326.
-(pdftex.def)             Requested size: 141.32549pt x 54.80377pt.
-<./images/softmax1.jpg, id=429, 499.8675pt x 216.81pt>
+Package pdftex.def Info: ./images/ReLU.jpeg  used on input line 333.
+(pdftex.def)             Requested size: 211.99364pt x 82.20775pt.
+<./images/softmax1.jpg, id=330, 499.8675pt x 216.81pt>
 File: ./images/softmax1.jpg Graphic file (type jpg)
 <use ./images/softmax1.jpg>
-Package pdftex.def Info: ./images/softmax1.jpg  used on input line 326.
-(pdftex.def)             Requested size: 99.97173pt x 43.36122pt.
- [21
+Package pdftex.def Info: ./images/softmax1.jpg  used on input line 333.
+(pdftex.def)             Requested size: 124.96657pt x 54.20236pt.
+<./images/softm.png, id=331, 235.63031pt x 91.84312pt>
+File: ./images/softm.png Graphic file (type png)
+<use ./images/softm.png>
+Package pdftex.def Info: ./images/softm.png  used on input line 333.
+(pdftex.def)             Requested size: 141.37927pt x 55.10628pt.
+ [18
 
- <./images/ReLU.jpeg> <./images/softmax1.jpg>] (./Presentation.toc) [22
+ <./images/ReLU.jpeg> <./images/softmax1.jpg> <./images/softm.png>] (./Presenta
+tion.toc) [19
 
 ]
-<./images/datasets.png, id=465, 892.33376pt x 272.01625pt>
+<./images/datasets.png, id=364, 892.33376pt x 272.01625pt>
 File: ./images/datasets.png Graphic file (type png)
 <use ./images/datasets.png>
-Package pdftex.def Info: ./images/datasets.png  used on input line 349.
-(pdftex.def)             Requested size: 267.7022pt x 81.6055pt.
- [23
+Package pdftex.def Info: ./images/datasets.png  used on input line 356.
+(pdftex.def)             Requested size: 312.32149pt x 95.2071pt.
 
- <./images/datasets.png (PNG copy)>] (./Presentation.toc) [24
+[20
 
-] [25
-
-] (./Presentation.toc) [26
+ <./images/datasets.png (PNG copy)>] (./Presentation.toc) [21
 
 ]
-<./images/inception.png, id=538, 807.015pt x 440.64626pt>
+<./images/inception.png, id=396, 807.015pt x 440.64626pt>
 File: ./images/inception.png Graphic file (type png)
 <use ./images/inception.png>
-Package pdftex.def Info: ./images/inception.png  used on input line 403.
-(pdftex.def)             Requested size: 225.96266pt x 123.3801pt.
+Package pdftex.def Info: ./images/inception.png  used on input line 409.
+(pdftex.def)             Requested size: 282.45947pt x 154.22849pt.
+ [22
 
-[27
+ <./images/inception.png>] (./Presentation.toc) [23
 
- <./images/inception.png>] (./Presentation.toc) [28
+] [24
 
-] [29
-
-]
-(./Presentation.toc) [30
-
-] [31
-
-] (./Presentation.toc) [32
-
-] [33
+] (./Presentation.toc) [25
 
 ]
-(./Presentation.toc) [34
+[26
+
+] (./Presentation.toc) [27
+
+] [28
+
+] (./Presentation.toc) [29
+
+] [30
+
+]
+(./Presentation.toc) [31
+
+] [32
+
+] (./Presentation.toc) [33
+
+] [34
 
 ] [35
 
-] (./Presentation.toc) [36
-
-] [37
-
-]
-(./Presentation.toc) [38
-
-] [39
-
-] (./Presentation.toc) [40
-
-] [41
-
-] [42
+] [36
 
 ]
 \tf@nav=\write6
@@ -1140,32 +1140,33 @@ Package pdftex.def Info: ./images/inception.png  used on input line 403.
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 545.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 545.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 553.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 553.
 
 (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 545.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 545.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 553.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 553.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: FE40D07E3D6A61FE99B79598906E9D41;1322.
+(rerunfilecheck)             Checksum: 4B09874494B61399BD3693C98C12D7C7;1064.
  ) 
 Here is how much of TeX's memory you used:
- 18255 strings out of 492649
- 343206 string characters out of 6129622
- 434040 words of memory out of 5000000
- 21562 multiletter control sequences out of 15000+600000
- 45152 words of font info for 66 fonts, out of 8000000 for 9000
+ 18247 strings out of 492649
+ 343231 string characters out of 6129622
+ 431159 words of memory out of 5000000
+ 21570 multiletter control sequences out of 15000+600000
+ 49124 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,65p,816b,751s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Presentation.pdf (42 pages, 1211909 bytes).
+l/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on Presentation.pdf (36 pages, 1259387 bytes).
 PDF statistics:
- 854 PDF objects out of 1000 (max. 8388607)
- 766 compressed objects within 8 object streams
- 107 named destinations out of 1000 (max. 500000)
- 326 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 660 PDF objects out of 1000 (max. 8388607)
+ 577 compressed objects within 6 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 

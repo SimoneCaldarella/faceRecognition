@@ -21,11 +21,12 @@
 \usepackage{times}
 \usepackage[T1]{fontenc}
 
-\title[Face recognition]{textbf{Multiple face recognition in images}}
-\subtitle{Presentation on Convolutional Neural Networks, 2018}
+\title[Face recognition]{\textbf{Multiple face recognition in images}}
+\subtitle{\texttt{Presentation on Convolutional Neural Networks, 2018}}
 
 \author[Simone Caldarella]
-{Simone~Caldarella }
+{Simone~Caldarella\\
+s.caldarella@studenti.unibs.it}
 
 \institute[University of Brescia] 
 {
@@ -35,7 +36,7 @@
 
 \date[IEEE Student Branch 2018] 
 {
-	
+	5/12/2018
 }
 
 \subject{Theoretical Computer Science}
@@ -44,6 +45,7 @@
 {
  	\begin{frame}<beamer>{Outline}
 		\begin{multicols}{2}
+			\setlength\itemsep{1em}
    			\tableofcontents[currentsection,currentsubsection]
 		\end{multicols}
   	\end{frame}
@@ -65,31 +67,33 @@
 
 \section{Introduction}
 
-\subsection{Motivation}
+%\subsection{Motivation}
 
 \begin{frame}{Motivation}
 	\begin{itemize}
+		\setlength\itemsep{1em}
 		\setbeamertemplate{itemize items}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item
-    			Create a ground for recognition problems
+			Machine learning is a field in continuos spreading.
 		\item
-			Show the power of retraining
+			Problem: IEEE student branch's members' recognition using neural network.
+		\item 
+    			Create a ground for recognition problems.
+		\item
+			Goal: implementing a face recognition system for the student branch's members, expecially:
+		\begin{itemize}
+				\setbeamertemplate{itemize subitem}[circle]
+				\setbeamercolor{itemize subitem}{fg=red}
+    				\item
+      					detect and recognize different faces in photos;
+    				\item    
+      					use a computer vision's framework (OpenCv) and a machine learning framework (Tensorflow).
+ 
+			\end{itemize}
 	\end{itemize}
 \end{frame}
 
-
-\subsection{Target}
-\begin{frame}{Target}
-	\begin{itemize}
-	\setbeamertemplate{itemize items}[triangle]
-		\setbeamercolor{itemize item}{fg=red}
-		\item
-    			Detect and recognize different faces in photos
-		\item
-			Use a computer vision's framework (OpenCv) and a machine learning framework (Tensorflow)
-	\end{itemize}
-\end{frame}
 
 %#####################################BACKGROUND############################################################
 
@@ -104,7 +108,9 @@
   		\item
     			Is this a \textbf{neural network} or a \textbf{graph}?
 	\end{itemize}
-	\includegraphics[scale=0.5]{neuralNet}
+	\begin{center}
+		\includegraphics[scale=0.5]{neuralNet}
+	\end{center}
 \end{frame}
 
 \begin{frame}{What does machine learning means?}
@@ -125,7 +131,7 @@
 					gradient descent and weights update.
 			\end{itemize}
 		\item
-    			The importance of a large and well organized dataset:
+    			The importance of a large and well structured dataset:
     			\begin{itemize}
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
@@ -145,7 +151,7 @@
 
 \begin{frame}{A more complex gradient descent loss}
 	\begin{center}
-    		\includegraphics[scale=0.3]{suchcomp}
+    		\includegraphics[scale=1.3]{suchcomp}
 	\end{center}
 \end{frame}
 
@@ -187,7 +193,7 @@
 				\item 
 					Tensorflow functions;
 				\item 
-					Keras and tflearn.
+					\texttt{Keras} and \texttt{tflearn}.
 			\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -208,14 +214,14 @@
 					lots of library and algorithm at the state-of-art.
 			\end{itemize}
 		\item 
-			OpenCv detection algorithm:
+			OpenCV detection algorithm:
 			\begin{itemize}
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
 				\item 
-					HaarCascadeClassifier;
+					\texttt{HaarCascadeClassifier};
 				\item 
-					Dlib library for facial features detection.
+					\texttt{Dlib} library for face features detection.
 			\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -226,7 +232,7 @@
 
 \subsection{Convolutional Neural Network}
 
-\begin{frame}{Convolutional Neural Network}
+\begin{frame}{Convolutional Neural Network (CNN)}
 	\includegraphics[scale=0.45]{CNN}
 \end{frame}
 
@@ -291,11 +297,11 @@
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			Fully connected layers are the last layer of the CNN
+			Fully connected layers are the last layer of the CNN.
 		\item 
-			Once the high-level features are recognized, they deal with classifications
+			Once the high-level features are recognized, they deal with classifications.
 		\item
-			Dropout regolarization
+			Dropout regolarization.
 	\end{itemize}
 	\begin{center}
 		\includegraphics[scale=0.35]{dropout}
@@ -308,20 +314,21 @@
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			ReLU
+			ReLU:
 	\end{itemize}
 	\begin{center}
-		\includegraphics[scale=0.2]{ReLU}
+		\includegraphics[scale=0.30]{ReLU}
 	\end{center}
 	\begin{itemize}
 		\setlength\itemsep{1em}
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			Softmax
+			Softmax (sigmoid and generical softmax):
 	\end{itemize}
 	\begin{center}
-		\includegraphics[scale=0.2]{softmax1}
+		\includegraphics[scale=0.25]{softmax1}
+		\includegraphics[scale=0.6]{softm}
 	\end{center}
 \end{frame}
 
@@ -338,60 +345,59 @@
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
 				\item 
-					made with hundreds of images;
+					made with thousands of images;
 				\item 
 					different images with different colors to help the network classify them better.
 			\end{itemize}
 	\end{itemize}
 	\begin{center}
-		\includegraphics[scale=0.3]{datasets}
+		\includegraphics[scale=0.35]{datasets}
 	\end{center}
 \end{frame}
 
-\subsection{ImageNet}
-
-\begin{frame}{ImageNet Challenge}
-	\begin{itemize}
-		\setlength\itemsep{1em}
-		\setbeamertemplate{itemize item}[triangle]
-		\setbeamercolor{itemize item}{fg=red}
-		\item 
-			The ImageNet project:
-			\begin{itemize}
-				\setbeamertemplate{itemize subitem}[circle]
-				\setbeamercolor{itemize subitem}{fg=red}
-				\item 
-					large visual database designed for visual object recognition software research;
-				\item 
-					it contains over 20 thousand categories( "balloon", "strawberry", etc...);
-				\item
-					all the images are labelled.
-			\end{itemize}
-		\item 
-			ImageNet Large Scale Visual Recognition Challenge (ILSVRC):
-			\begin{itemize}
-				\setbeamertemplate{itemize subitem}[circle]
-				\setbeamercolor{itemize subitem}{fg=red}
-				\item 
-					is a competition where research teams evaluate their algorithms on the given data								set(ImageNet);
-				\item 
-					they compete to achieve higher accuracy on several visual recognition tasks.
-			\end{itemize}
-	\end{itemize}
-\end{frame}
+%\subsection{ImageNet}
+%\begin{frame}{ImageNet Challenge}
+%	\begin{itemize}
+%		\setlength\itemsep{1em}
+%		\setbeamertemplate{itemize item}[triangle]
+%		\setbeamercolor{itemize item}{fg=red}
+%		\item 
+%			The ImageNet project:
+%			\begin{itemize}
+%				\setbeamertemplate{itemize subitem}[circle]
+%				\setbeamercolor{itemize subitem}{fg=red}
+%				\item 
+%					large visual database designed for visual object recognition software research;
+%				\item 
+%					it contains over 20 thousand categories( "balloon", "strawberry", etc...);
+%				\item
+%					all the images are labelled.
+%			\end{itemize}
+%		\item 
+%			ImageNet Large Scale Visual Recognition Challenge (ILSVRC):
+%			\begin{itemize}
+%				\setbeamertemplate{itemize subitem}[circle]
+%				\setbeamercolor{itemize subitem}{fg=red}
+%				\item 
+%					is a competition where research teams evaluate their algorithms on the given data			%					set(ImageNet);
+%				\item 
+%					they compete to achieve higher accuracy on several visual recognition tasks.
+%			\end{itemize}
+%	\end{itemize}
+%\end{frame}
 
 \subsection{Inception V3 by Google}
 
-\begin{frame}{Inception network}
+\begin{frame}{Inception network (V3 - Example)}
 	\begin{itemize}
 		\setlength\itemsep{1em}
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			Inception networks analize images with different kernel size (in the same conv layer)
+			Inception network analizes images with different kernel size (in the same convolutional layer)
 	\end{itemize}
 	\begin{center}
-		\includegraphics[scale=0.28]{inception}
+		\includegraphics[scale=0.35]{inception}
 	\end{center}
 	%\begin{itemize}
 		%\setlength\itemsep{1em}
@@ -410,14 +416,20 @@
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			Concept of retraining
+			Concept of transfer learning (or retraining):  taking a piece of a model that has already been trained on a related task and reusing it in a new model.
 		\item 
-			Tensorflow-hub: the key to create your own classifier with good result and without a Tesla k80
+			Tensorflow-hub: the key to create your own classifier with good result and without a Tesla k80.
 	\end{itemize}
 \end{frame}
 %#####################################PROPOSAL############################################################
 
-\section{Proposal}
+\section{Proposed program}
+
+\subsection{My work}
+
+\begin{frame}
+inserisci immagine divisa in tre con i tre "momenti"
+\end{frame}
 
 \subsection{Obtain images}
 
@@ -428,16 +440,16 @@
 		\setbeamercolor{itemize item}{fg=red}
 
 			\item 
-				It use some OpenCv functions to get hundreds of photos in less than 30 seconds;
+				It uses OpenCv functions to get hundreds of photos in less than 30 seconds.
 			\item 
-				after that, it crops them keeping only the faces(using a face detection algorithm) and it saves them;
+				It crops photos by keeping only the faces(using haarcascadeclassifier) and it saves them.
 			\item
-				this is made to avoid the recognition of unwanted features as background color without 							the need of hundreds of images taken in different places.
+				This is made to avoid the recognition of unwanted features as background color without 							the need of several images taken in different places.
 		
 	\end{itemize}
 \end{frame}
 
-\subsection{Training (or retraining)}
+\subsection{Retraining}
 
 \begin{frame}{Training}
 \begin{itemize}
@@ -446,11 +458,11 @@
 		\setbeamercolor{itemize item}{fg=red}
 		
 			\item 
-				The algorithm takes the cropped pics and use them as dataset for the training;
+				The algorithm takes the cropped images and use them as dataset for the training.
 			\item 
-				in fact only the fully connected layers are trained;
+				Only the fully connected layers are trained.
 			\item
-				relatively fast.
+				More than 10x faster than a complete training.
 		
 	\end{itemize}
 \end{frame}
@@ -463,11 +475,11 @@
 		\setbeamercolor{itemize item}{fg=red}
 		
 			\item 
-				Choose a pic with multiple faces that you want to recognize/classify;
+				Choose a photo with multiple faces that you want to recognize/classify.
 			\item 
-				select the graph you want to use for inference;
+				Select the already trained network you want to use for inference.
 			\item
-				you should obtain the original photo with multiple boxes around all the faces and, under each of them, the name of the most probable person.
+				Obtain the original photo with multiple boxes around all the faces and, under each of them, the name of the most probable person.
 		
 	\end{itemize}
 \end{frame}
@@ -485,27 +497,23 @@
 	\setbeamertemplate{itemize item}[triangle]
 	\setbeamercolor{itemize item}{fg=red}
 	\item 
-		Create your own machine learning program using another pre-trained model can help you to build 					something useful without the need of a workstation or cloud computing
+		Creating your own machine learning application using another pre-trained model can help you build 					something useful without the need of high performance cluster or cloud computing.
 	\item 
-		This project is only a small example of the potentiality of Tensorflow and the machine learning approach
-	\end{itemize}
-\end{frame}
-
-\subsection{Future implementation}
-
-\begin{frame}{Future implementation}
+		The project, albeit simple, shows the potential of using Tensorflow and machine learning approaches in applications.
+	\item
+		Future works:
 	\begin{itemize}
-		\setlength\itemsep{1em}
-		\setbeamertemplate{itemize item}[triangle]
-		\setbeamercolor{itemize item}{fg=red}
-		\item 
-			Let the users to choose beetwen more pre-trained models
-		\item 
-			Find the best way to recognize an unknown person (someone who does not have photos yet)
+				\setbeamertemplate{itemize subitem}[circle]
+				\setbeamercolor{itemize subitem}{fg=red}
+    				\item
+      					let the users choose beetwen more pre-trained models;
+    				\item    
+      					find the best way to recognize an unknown person (i.e. new student branch members).
+ 
+			\end{itemize}
+		
 	\end{itemize}
 \end{frame}
-
-\subsection{Best bugs}
 
 \begin{frame}{Best bugs}
 	\begin{itemize}
@@ -513,10 +521,10 @@
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			OpenCv imshow freezing bug on unix like system
+			OpenCv \texttt{imshow} freezing bug on unix like system.
 		\item 
-			Tensorflow-hub requires a tensorflow version that could not work with lots of 									processors(precompiled with AVX activation)
-			(\href{https://github.com/tensorflow/tensorflow/issues/17411}{\color{red}Link to issue})
+			Tensorflow-hub requires a tensorflow version that could not work with some 								processors(precompiled with AVX activation)
+			(\href{https://github.com/tensorflow/tensorflow/issues/17411}{\color{red}Link to issue}).
 	\end{itemize}
 \end{frame}
 
@@ -530,15 +538,15 @@
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			Project repository: \href{https://github.com/SimoneCaldarella/faceRecognition}{\color{red}Link to repo}
+			Project repository: \href{https://github.com/SimoneCaldarella/faceRecognition}{\color{red}Link to repo}.
 		\item 
-			Tensorflow: \href{https://www.tensorflow.org}{\color{red}Link to Tensorflow page}
+			Tensorflow: \href{https://www.tensorflow.org}{\color{red}Link to Tensorflow page}.
 		\item 
-			OpenCv: \href{https://opencv.org}{\color{red}Link to OpenCv project}
+			OpenCv: \href{https://opencv.org}{\color{red}Link to OpenCv project}.
 		\item 
-			Convolutional Neural Network example: \href{https://bit.ly/2vBgoO3}{\color{red}GoogleNet}
+			Convolutional Neural Network example: \href{https://bit.ly/2vBgoO3}{\color{red}GoogleNet}.
 		\item 
-			Tensorflow retrain: \href{https://www.tensorflow.org/hub/tutorials/image_retraining}{\color{red}tensorflow retraining}
+			Tensorflow retrain: \href{https://www.tensorflow.org/hub/tutorials/image_retraining}{\color{red}tensorflow retraining}.
 	\end{itemize}
 \end{frame}
 
