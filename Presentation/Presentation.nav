@@ -23,14 +23,14 @@
 \headcommand {\slideentry {2}{1}{5}{8/8}{Machine learning}{0}}
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\beamer@subsectionpages {4}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{Tensorflow and OpenCv}}
-\headcommand {\slideentry {2}{2}{1}{9/9}{Tensorflow and OpenCv}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{Tensorflow and OpenCV}}
+\headcommand {\slideentry {2}{2}{1}{9/9}{Tensorflow and OpenCV}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{2}{2}{10/10}{Tensorflow and OpenCv}{0}}
+\headcommand {\slideentry {2}{2}{2}{10/10}{Tensorflow and OpenCV}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{2}{3}{11/11}{Tensorflow and OpenCv}{0}}
+\headcommand {\slideentry {2}{2}{3}{11/11}{Tensorflow and OpenCV}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{2}{4}{12/12}{Tensorflow and OpenCv}{0}}
+\headcommand {\slideentry {2}{2}{4}{12/12}{Tensorflow and OpenCV}{0}}
 \headcommand {\beamer@framepages {12}{12}}
 \headcommand {\beamer@subsectionpages {9}{12}}
 \headcommand {\beamer@subsectionentry {0}{2}{3}{13}{Convolutional Neural Network}}
@@ -68,10 +68,10 @@
 \headcommand {\beamer@subsectionpages {23}{24}}
 \headcommand {\sectionentry {3}{Proposed program}{25}{Proposed program}{0}}
 \headcommand {\beamer@subsectionpages {25}{24}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{25}{My work}}
-\headcommand {\slideentry {3}{1}{1}{25/25}{My work}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{25}{Overview}}
+\headcommand {\slideentry {3}{1}{1}{25/25}{Overview}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {3}{1}{2}{26/26}{My work}{0}}
+\headcommand {\slideentry {3}{1}{2}{26/26}{Overview}{0}}
 \headcommand {\beamer@framepages {26}{26}}
 \headcommand {\beamer@subsectionpages {25}{26}}
 \headcommand {\beamer@subsectionentry {0}{3}{2}{27}{Obtain images}}
@@ -86,10 +86,10 @@
 \headcommand {\slideentry {3}{3}{2}{30/30}{Retraining}{0}}
 \headcommand {\beamer@framepages {30}{30}}
 \headcommand {\beamer@subsectionpages {29}{30}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{31}{Inference}}
-\headcommand {\slideentry {3}{4}{1}{31/31}{Inference}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{31}{Program usage}}
+\headcommand {\slideentry {3}{4}{1}{31/31}{Program usage}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {3}{4}{2}{32/32}{Inference}{0}}
+\headcommand {\slideentry {3}{4}{2}{32/32}{Program usage}{0}}
 \headcommand {\beamer@framepages {32}{32}}
 \headcommand {\beamer@sectionpages {25}{32}}
 \headcommand {\beamer@subsectionpages {31}{32}}

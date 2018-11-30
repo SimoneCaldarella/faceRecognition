@@ -21,12 +21,12 @@
 \usepackage{times}
 \usepackage[T1]{fontenc}
 
-\title[Face recognition]{\textbf{Multiple face recognition in images}}
-\subtitle{\texttt{Presentation on Convolutional Neural Networks, 2018}}
+\title[Face recognition]{\textbf{Multiple Face Recognition in Images}}
+\subtitle{\texttt{Presentation on Convolutional Neural Networks}}
 
 \author[Simone Caldarella]
 {Simone~Caldarella\\
-s.caldarella@studenti.unibs.it}
+simone.caldarella.it@ieee.org}
 
 \institute[University of Brescia] 
 {
@@ -75,20 +75,20 @@ s.caldarella@studenti.unibs.it}
 		\setbeamertemplate{itemize items}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item
-			Machine learning is a field in continuos spreading.
+			Machine learning is a field in continuous spreading.
 		\item
-			Problem: IEEE student branch's members' recognition using neural network.
+			Problem: IEEE student branch members' recognition using neural network.
 		\item 
     			Create a ground for recognition problems.
 		\item
-			Goal: implementing a face recognition system for the student branch's members, expecially:
+			Goal: implementing a face recognition system for the student branch members, expecially:
 		\begin{itemize}
 				\setbeamertemplate{itemize subitem}[circle]
 				\setbeamercolor{itemize subitem}{fg=red}
     				\item
       					detect and recognize different faces in photos;
     				\item    
-      					use a computer vision's framework (OpenCv) and a machine learning framework (Tensorflow).
+      					use a computer vision framework (OpenCV) and a machine learning framework (Tensorflow).
  
 			\end{itemize}
 	\end{itemize}
@@ -101,7 +101,7 @@ s.caldarella@studenti.unibs.it}
 
 \subsection{Machine learning}
 
-\begin{frame}{What does machine learning means?}
+\begin{frame}{What does machine learning mean?}
 	\begin{itemize}
 		\setbeamertemplate{itemize items}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
@@ -113,7 +113,7 @@ s.caldarella@studenti.unibs.it}
 	\end{center}
 \end{frame}
 
-\begin{frame}{What does machine learning means?}
+\begin{frame}{What does machine learning mean?}
 	\begin{itemize}
 		\setlength\itemsep{1em}
 		\setbeamertemplate{itemize item}[triangle]
@@ -155,9 +155,9 @@ s.caldarella@studenti.unibs.it}
 	\end{center}
 \end{frame}
 
-\subsection{Tensorflow and OpenCv}
+\subsection{Tensorflow and OpenCV}
 
-\begin{frame}{Tensorflow and OpenCv}
+\begin{frame}{Tensorflow and OpenCV}
 	\begin{itemize}
 		\setlength\itemsep{1em}
 		\setbeamertemplate{itemize item}[triangle]
@@ -211,7 +211,7 @@ s.caldarella@studenti.unibs.it}
 				\item 
 					Very fast;
 				\item 
-					lots of library and algorithm at the state-of-art.
+					lots of libraries and algorithm at the state of the art.
 			\end{itemize}
 		\item 
 			OpenCV detection algorithm:
@@ -286,7 +286,7 @@ s.caldarella@studenti.unibs.it}
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			Reducing number of information: best way to avoiding \textbf{overfitting} and decreasing 							computation complexity
+			Reducing number of information: best way to avoid \textbf{overfitting} and to decrease 							computation complexity
 	\end{itemize}
 	\includegraphics[scale=0.35]{pooling}
 \end{frame}
@@ -299,7 +299,7 @@ s.caldarella@studenti.unibs.it}
 		\item 
 			Fully connected layers are the last layer of the CNN.
 		\item 
-			Once the high-level features are recognized, they deal with classifications.
+			Once the high-level features are recognized, they deal with classification.
 		\item
 			Dropout regolarization.
 	\end{itemize}
@@ -314,7 +314,7 @@ s.caldarella@studenti.unibs.it}
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			ReLU:
+			ReLU (rectified linear unit):
 	\end{itemize}
 	\begin{center}
 		\includegraphics[scale=0.30]{ReLU}
@@ -425,7 +425,7 @@ s.caldarella@studenti.unibs.it}
 
 \section{Proposed program}
 
-\subsection{My work}
+\subsection{Overview}
 
 \begin{frame}
 inserisci immagine divisa in tre con i tre "momenti"
@@ -440,9 +440,9 @@ inserisci immagine divisa in tre con i tre "momenti"
 		\setbeamercolor{itemize item}{fg=red}
 
 			\item 
-				It uses OpenCv functions to get hundreds of photos in less than 30 seconds.
+				It uses OpenCV functions to get hundreds of photos in less than 30 seconds.
 			\item 
-				It crops photos by keeping only the faces(using haarcascadeclassifier) and it saves them.
+				It crops photos by keeping only the faces (using \texttt{haarcascadeclassifier}) and it saves them.
 			\item
 				This is made to avoid the recognition of unwanted features as background color without 							the need of several images taken in different places.
 		
@@ -451,14 +451,14 @@ inserisci immagine divisa in tre con i tre "momenti"
 
 \subsection{Retraining}
 
-\begin{frame}{Training}
+\begin{frame}{Retraining}
 \begin{itemize}
 		\setlength\itemsep{1em}
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		
 			\item 
-				The algorithm takes the cropped images and use them as dataset for the training.
+				The algorithm takes the cropped images and uses them as dataset for the retraining.
 			\item 
 				Only the fully connected layers are trained.
 			\item
@@ -467,8 +467,8 @@ inserisci immagine divisa in tre con i tre "momenti"
 	\end{itemize}
 \end{frame}
 
-\subsection{Inference}
-\begin{frame}{Inference}
+\subsection{Program usage}
+\begin{frame}{Program usage}
 \begin{itemize}
 		\setlength\itemsep{1em}
 		\setbeamertemplate{itemize item}[triangle]
@@ -508,7 +508,7 @@ inserisci immagine divisa in tre con i tre "momenti"
     				\item
       					let the users choose beetwen more pre-trained models;
     				\item    
-      					find the best way to recognize an unknown person (i.e. new student branch members).
+      					find the best way to recognize an unknown person (i.e., new student branch members).
  
 			\end{itemize}
 		
@@ -521,9 +521,9 @@ inserisci immagine divisa in tre con i tre "momenti"
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			OpenCv \texttt{imshow} freezing bug on unix like system.
+			OpenCV \texttt{imshow} freezing bug on Unix-like systems.
 		\item 
-			Tensorflow-hub requires a tensorflow version that could not work with some 								processors(precompiled with AVX activation)
+			Tensorflow-hub requires a tensorflow version that could not work with some 								processors (precompiled with AVX activation)
 			(\href{https://github.com/tensorflow/tensorflow/issues/17411}{\color{red}Link to issue}).
 	\end{itemize}
 \end{frame}
@@ -542,7 +542,7 @@ inserisci immagine divisa in tre con i tre "momenti"
 		\item 
 			Tensorflow: \href{https://www.tensorflow.org}{\color{red}Link to Tensorflow page}.
 		\item 
-			OpenCv: \href{https://opencv.org}{\color{red}Link to OpenCv project}.
+			OpenCV: \href{https://opencv.org}{\color{red}Link to OpenCV project}.
 		\item 
 			Convolutional Neural Network example: \href{https://bit.ly/2vBgoO3}{\color{red}GoogleNet}.
 		\item 
