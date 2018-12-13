@@ -9,6 +9,7 @@
 \setbeamertemplate{itemize subitem}[circle]
 \setbeamercolor{itemize subitem}{fg=red}
 \usepackage{multicol}
+\usepackage{mathtools}
 
 \mode<presentation>
 {
@@ -45,7 +46,7 @@ simone.caldarella.it@ieee.org}
 {
  	\begin{frame}<beamer>{Outline}
 		\begin{multicols}{2}
-			\setlength\itemsep{1em}
+			\setlength\itemsep{2em}
    			\tableofcontents[currentsection,currentsubsection]
 		\end{multicols}
   	\end{frame}
@@ -111,6 +112,13 @@ simone.caldarella.it@ieee.org}
 	\begin{center}
 		\includegraphics[scale=0.5]{neuralNet}
 	\end{center}
+	\begin{itemize}
+		\setbeamertemplate{itemize items}[triangle]
+		\setbeamercolor{itemize item}{fg=red}
+  		\item
+    			\(y = Wx + B\)
+	\end{itemize}
+		
 \end{frame}
 
 \begin{frame}{What does machine learning mean?}
@@ -297,7 +305,7 @@ simone.caldarella.it@ieee.org}
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			Fully connected layers are the last layer of the CNN.
+			Fully connected layers are the last layers of the CNN.
 		\item 
 			Once the high-level features are recognized, they deal with classification.
 		\item
@@ -314,7 +322,7 @@ simone.caldarella.it@ieee.org}
 		\setbeamertemplate{itemize item}[triangle]
 		\setbeamercolor{itemize item}{fg=red}
 		\item 
-			ReLU (rectified linear unit):
+			ReLU (Rectified Linear Unit):
 	\end{itemize}
 	\begin{center}
 		\includegraphics[scale=0.30]{ReLU}
@@ -355,36 +363,36 @@ simone.caldarella.it@ieee.org}
 	\end{center}
 \end{frame}
 
-%\subsection{ImageNet}
-%\begin{frame}{ImageNet Challenge}
-%	\begin{itemize}
-%		\setlength\itemsep{1em}
-%		\setbeamertemplate{itemize item}[triangle]
-%		\setbeamercolor{itemize item}{fg=red}
-%		\item 
-%			The ImageNet project:
-%			\begin{itemize}
-%				\setbeamertemplate{itemize subitem}[circle]
-%				\setbeamercolor{itemize subitem}{fg=red}
-%				\item 
-%					large visual database designed for visual object recognition software research;
-%				\item 
-%					it contains over 20 thousand categories( "balloon", "strawberry", etc...);
-%				\item
-%					all the images are labelled.
-%			\end{itemize}
-%		\item 
-%			ImageNet Large Scale Visual Recognition Challenge (ILSVRC):
-%			\begin{itemize}
-%				\setbeamertemplate{itemize subitem}[circle]
-%				\setbeamercolor{itemize subitem}{fg=red}
-%				\item 
-%					is a competition where research teams evaluate their algorithms on the given data			%					set(ImageNet);
-%				\item 
-%					they compete to achieve higher accuracy on several visual recognition tasks.
-%			\end{itemize}
-%	\end{itemize}
-%\end{frame}
+\subsection{ImageNet}
+\begin{frame}{ImageNet Challenge}
+	\begin{itemize}
+		\setlength\itemsep{1em}
+		\setbeamertemplate{itemize item}[triangle]
+		\setbeamercolor{itemize item}{fg=red}
+		\item 
+			The ImageNet project:
+			\begin{itemize}
+				\setbeamertemplate{itemize subitem}[circle]
+				\setbeamercolor{itemize subitem}{fg=red}
+				\item 
+					large database designed for visual object recognition software research;
+				\item 
+					it contains over 20 thousand categories( "balloon", "strawberry", etc...);
+				\item
+					all the images are labelled.
+			\end{itemize}
+		\item 
+			ImageNet Large Scale Visual Recognition Challenge (ILSVRC):
+			\begin{itemize}
+				\setbeamertemplate{itemize subitem}[circle]
+				\setbeamercolor{itemize subitem}{fg=red}
+				\item 
+					is a competition where research teams evaluate their algorithms on the given data								set (ImageNet);
+				\item 
+					they compete to achieve higher accuracy on several visual recognition tasks.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
 
 \subsection{Inception V3 by Google}
 
@@ -427,8 +435,10 @@ simone.caldarella.it@ieee.org}
 
 \subsection{Overview}
 
-\begin{frame}
-inserisci immagine divisa in tre con i tre "momenti"
+\begin{frame}{Example of the program}
+	\begin{center}
+		\includegraphics[scale=0.1]{prova}
+	\end{center}
 \end{frame}
 
 \subsection{Obtain images}

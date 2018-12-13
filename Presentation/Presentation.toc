@@ -5,12 +5,13 @@
 \beamer@subsectionintoc {2}{2}{Tensorflow and OpenCV}{9}{0}{2}
 \beamer@subsectionintoc {2}{3}{Convolutional Neural Network}{13}{0}{2}
 \beamer@subsectionintoc {2}{4}{Dataset}{19}{0}{2}
-\beamer@subsectionintoc {2}{5}{Inception V3 by Google}{21}{0}{2}
-\beamer@subsectionintoc {2}{6}{Tensorflow and retraining}{23}{0}{2}
-\beamer@sectionintoc {3}{Proposed program}{25}{0}{3}
-\beamer@subsectionintoc {3}{1}{Overview}{25}{0}{3}
-\beamer@subsectionintoc {3}{2}{Obtain images}{27}{0}{3}
-\beamer@subsectionintoc {3}{3}{Retraining}{29}{0}{3}
-\beamer@subsectionintoc {3}{4}{Program usage}{31}{0}{3}
-\beamer@sectionintoc {4}{Summary}{33}{0}{4}
-\beamer@subsectionintoc {4}{1}{Conclusion}{33}{0}{4}
+\beamer@subsectionintoc {2}{5}{ImageNet}{21}{0}{2}
+\beamer@subsectionintoc {2}{6}{Inception V3 by Google}{23}{0}{2}
+\beamer@subsectionintoc {2}{7}{Tensorflow and retraining}{25}{0}{2}
+\beamer@sectionintoc {3}{Proposed program}{27}{0}{3}
+\beamer@subsectionintoc {3}{1}{Overview}{27}{0}{3}
+\beamer@subsectionintoc {3}{2}{Obtain images}{29}{0}{3}
+\beamer@subsectionintoc {3}{3}{Retraining}{31}{0}{3}
+\beamer@subsectionintoc {3}{4}{Program usage}{33}{0}{3}
+\beamer@sectionintoc {4}{Summary}{35}{0}{4}
+\beamer@subsectionintoc {4}{1}{Conclusion}{35}{0}{4}
